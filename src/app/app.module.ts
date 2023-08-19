@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { PedidoItensComponent } from './components/pedido-itens/pedido-itens.com
 import { ProdutosComponent } from './components/produtos/produtos.component';
 import { PedidoService } from './services/pedido.service';
 import { MoneyPipe } from './pipes/money.pipe';
+import { ProdutoGateway } from './gateway/produto.gateway';
 
 @NgModule({
   declarations: [
@@ -25,10 +27,12 @@ import { MoneyPipe } from './pipes/money.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
-    PedidoService
+    PedidoService,
+    ProdutoGateway,
   ],
   bootstrap: [AppComponent]
 })
