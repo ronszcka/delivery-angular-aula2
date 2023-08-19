@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PedidosComponent } from './components/pedidos/pedidos.component';
+import { PedidoComponent } from './components/pedido/pedido.component';
+import { PedidoItensComponent } from './components/pedido-itens/pedido-itens.component';
+import { ProdutosComponent } from './components/produtos/produtos.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { PedidosComponent } from './components/pedidos/pedidos.component';
     HeaderComponent,
     DashboardComponent,
     PedidosComponent,
+    PedidoComponent,
+    PedidoItensComponent,
+    ProdutosComponent,
   ],
   imports: [
     BrowserModule,
